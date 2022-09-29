@@ -1,0 +1,16 @@
+.form-content{
+    margin: 1rem 0;
+}
+.form-content label,
+.form-content input{
+    display: block;
+    width: 100%;
+    margin-bottom: .25rem;
+}
+.form-content input{
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+.form-content input:fcous{
+    outline-color: #7470f0;
+}

@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+        link(rel="stylesheet", href="/css/index.css")
+        block styles
+    body 
+        header.shop-header
+                nav.shop-nav
+                    ul.shop-list
+                        li.shop-list-item
+                            a.active(href="/", class=(path === '/' ? 'active':'')) 商品
+                        li.shop-list-item
+                            a.active(href="/admin/add-product", class=(path === '/admin/add-product' ? 'active':'')) 添加商品
+
+        block content
+        //- h1 页面走丢了!!
